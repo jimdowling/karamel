@@ -1,0 +1,12 @@
+dependencies:
+- global: &id001 []
+  local: *id001
+  recipe: karamel::install
+- global: *id001
+  local:
+  - karamel::install
+  recipe: karamel::experiment
+- global: *id001
+  local: *id001
+  recipe: karamel::ca
+
