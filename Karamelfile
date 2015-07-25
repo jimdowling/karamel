@@ -2,9 +2,12 @@ dependencies:
 - global: &id001 []
   local: *id001
   recipe: karamel::install
-- global: *id001
+- global:
+  - hops::nn
+  - hops::dn
   local:
   - karamel::install
+  - hadoop::install
   recipe: karamel::experiment
 - global: *id001
   local: *id001
